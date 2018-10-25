@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card_sun"
+    android:id="@+id/card_bg_rl">
+
+    <TextView
+        android:id="@+id/card_temp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17℃"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/card_city_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="张家口市"
+        android:layout_below="@+id/card_temp_tv"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="@dimen/drawer_text_size"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_city_tv"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="2018-09-30 14:46"
+        android:id="@+id/card_time_tv"/>
+
+    <TextView
+        android:id="@+id/card_weather_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="晴"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/card_temp_tv"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

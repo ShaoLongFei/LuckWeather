@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auto_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_auto_seektips"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:paddingLeft="15dp"
+        android:text="桥东区"
+        android:textColor="@color/clear_sky_day_start"
+        android:textSize="22sp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_nationandprivance"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:paddingLeft="15dp">
+
+
+        <TextView
+            android:id="@+id/tv_City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张家口市" />
+
+        <TextView
+            android:id="@+id/tv_Privance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="河北省,"
+            />
+
+        <TextView
+            android:id="@+id/tv_Nation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="中国"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#555758" />
+
+</LinearLayout>

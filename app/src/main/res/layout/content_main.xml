@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:minHeight="?actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/tv_topCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/first_show_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_updateTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20.0dip"
+                            android:layout_marginTop="15.0dip"
+                            android:gravity="right"
+                            android:text="20:01 刷新"
+                            android:textColor="@color/home_text_color_dark"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_RTTemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_updateTime"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="sans-serif-thin"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textColor="@color/home_text_color"
+                            android:textSize="90sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_degree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/tv_RTTemp"
+                            android:layout_toRightOf="@id/tv_RTTemp"
+                            android:fontFamily="sans-serif-thin"
+                            android:text="°"
+                            android:textColor="@color/home_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_RTTypeAndRealFeel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_RTTemp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5.0dip"
+                            android:text="晴 | 体感 21°"
+                            android:textColor="@color/home_text_color_dark"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@+id/tv_aqi"
+                            style="@style/HomeCustomButtonStyle"
+                            android:layout_below="@id/tv_RTTypeAndRealFeel"
+                            android:clickable="true"
+                            android:text="空气良 59" />
+
+                    </RelativeLayout>
+
+                    <com.example.liuyue.luckweather.widget.IndexHorizontalScrollView
+                        android:id="@+id/indexHorizontalScrollView"
+                        android:background="#00000000"
+                        android:fadeScrollbars="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true">
+
+                        <com.example.liuyue.luckweather.widget.Today24HourView
+                            android:id="@+id/today24HourView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                    </com.example.liuyue.luckweather.widget.IndexHorizontalScrollView>
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/ic_alarm_blue"
+                        android:id="@+id/alarm_iv"
+                        android:layout_above="@+id/indexHorizontalScrollView"
+                        android:layout_marginBottom="120dip"
+                        android:layout_alignParentRight="true"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/ic_mycare"
+                        android:id="@+id/care_iv"
+                        android:layout_above="@+id/indexHorizontalScrollView"
+                        android:layout_marginBottom="65dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/ic_voice"
+                        android:id="@+id/voice_iv"
+                        android:layout_above="@+id/indexHorizontalScrollView"
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginBottom="8.0dip"
+                    android:background="@color/home_item_divider_color" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="15.0dip"
+                    android:paddingTop="15.0dip"
+                    android:text="@string/activity_home_class_title_week_forecast"
+                    android:textColor="@color/home_text_color_dark"
+                    android:textSize="13.0sp" />
+
+                <com.example.liuyue.luckweather.widget.WeekForcastView.ZzWeatherView
+                    android:id="@+id/weather_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:scrollbarSize="0dp"
+                    android:scrollbarThumbHorizontal="@drawable/scroll_bar_thumb"
+                    android:scrollbarTrackHorizontal="@drawable/scroll_bar_thumb" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginBottom="8.0dip"
+                    android:background="@color/home_item_divider_color" />
+
+                <!-- 详细信息 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/activity_home_class_title_details"
+                    android:textColor="@color/home_text_color_dark"
+                    android:textSize="14.0sp"
+                    android:layout_marginTop="20dip"/>
+
+                <include layout="@layout/details" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginBottom="8.0dip"
+                    android:background="@color/home_item_divider_color" />
+
+                <!-- 空气质量 -->
+                <include layout="@layout/aqi" />
+                <!-- 日出日落 -->
+                <include layout="@layout/sun_rise" />
+                <!-- 指数 -->
+                <include layout="@layout/zhishu" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_alarm_orange"
+            android:id="@+id/alarm_title_iv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="霜冻蓝色预警"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/alarm_title_tv"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布信息："
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="张家口市气象台2018年09月20日16时57分发布霜冻蓝色预警信号：受较强冷空气影响，21～24日早晨气温较低，坝下大部最低气温将达到2～5℃，出现初霜冻；坝上大部最低气温将达到-4～-1℃，出现冰冻。请做好预防工作。\n防御指南：\n1、政府及农林主管部门按照职责做好防霜冻准备工作；\n2、对农作物、蔬菜、花卉、瓜果、林业育种要采取一定的防护措施；\n3、农村基层组织和农户要关注当地霜冻预警信息，以便采取措施加强防护。（预警信息来源：国家预警信息发布中心）"
+        android:textColor="@color/black"
+        android:id="@+id/alarm_message_tv"
+        android:textSize="18dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热心提醒："
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.出门前准备好手套.帽子等御寒衣物；\n\n2.户外活动警惕冻伤风险。"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:id="@+id/alarm_remind_tv"
+        android:layout_marginLeft="15dp"
+        />
+
+
+
+
+</LinearLayout>

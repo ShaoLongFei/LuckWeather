@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.example.liuyue.luckweather.widget.weather.SkyView
+        android:id="@+id/myWeatherView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/backgroundVague"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/backgroundBlack"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:alpha="0.0"/>
+
+        <include layout="@layout/content_main" />
+
+        <RelativeLayout
+            android:layout_width="270.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#505050"
+            android:orientation="vertical"
+            android:id="@+id/ll_left">
+
+            <RelativeLayout
+                android:id="@+id/rl_drawerHeader"
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip">
+
+                <ImageView
+                    android:id="@+id/iv_drawerHeaderIv"
+                    android:layout_width="270.0dip"
+                    android:layout_height="200.0dip"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/nav_night" />
+
+                <TextView
+                    android:id="@+id/tv_motto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_motto_voice"
+                    android:id="@+id/iv_motto_voice"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_drawerHeader"
+                android:id="@+id/sv_drawerBody">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <ListView
+                        android:id="@+id/lv_drawer_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:divider="@null"
+                        android:dividerHeight="20dp"
+                        android:scrollbars="none"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/bg_card_add"
+                        android:id="@+id/card_add_iv"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/transparent_to_gray"
+                android:layout_below="@+id/rl_drawerHeader"/>
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</RelativeLayout>

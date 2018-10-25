@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Luck Weather</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="activity_home_class_title_air_quality_index">空气质量指数</string>
+    <string name="activity_home_class_title_data_source">数据来源 中国天气网</string>
+    <string name="activity_home_class_title_week_forecast">未来7天预报</string>
+    <string name="activity_home_class_title_living_index">生活指数</string>
+    <string name="activity_home_class_title_sun">日出和日落</string>
+    <string name="activity_home_class_title_details">详细信息</string>
+    <string name="activity_home_refresh_time">%1$s 刷新</string>
+    <string name="activity_home_str_humidity">相对湿度</string>
+    <string name="activity_home_str_visibility">能见度</string>
+    <string name="activity_home_str_ultraviolet_light">紫外线</string>
+    <string name="activity_home_str_pressure">气压</string>
+    <string name="activity_home_str_cloudiness">云量</string>
+    <string name="activity_home_str_no2">NO2[二氧化氮]</string>
+    <string name="activity_home_str_pm10">PM10[可吸入颗粒物]</string>
+    <string name="activity_home_str_pm25">PM2.5[细颗粒物]</string>
+    <string name="activity_home_str_so2">SO2[二氧化硫]</string>
+    <string name="activity_home_str_wind">风</string>
+    <string name="activity_home_type_and_real_feel_temp">%1$s | 体感 %2$s°</string>
+    <string name="custom_sun_view_str_sunrise">日出 %1$s</string>
+    <string name="custom_sun_view_str_sunset">日落 %1$s</string>
+    <string name="activity_home_str_zhishu">http://m.zuimeitianqi.com/Phone/index/index.html?code1=%s&#038;temp=%s&#038;wpow=%s&#038;wdir=%s&#038;pm=%s&#038;id=%s&#038;name=%s&#038;level=%s&#038;lname=%s&#038;lnum=5&#038;desc=%s</string>
+    <string name="menu_about">关于我们</string>
+    <string name="menu_zhishuset">指数设置</string>
+    <string name="send_sms">您好，我是幸运精灵，我的主人让我提醒您今天的天气是%s,%s,%s</string>
+    <string name="voice_str">幸运精灵向您报道，今天的天气是%s,最高温度%s,最低温度%s,%s,%s,报告完毕，祝您有一个好心情</string>
+    <string name="menu_music_open">背景音乐  开</string>
+    <string name="menu_music_close">背景音乐  关</string>
+    <string name="menu_speech">语音相关</string>
+    <string-array name="voicer_entries">
+        <item>小燕—女青、中英、普通话</item>
+        <item>小宇—男青、中英、普通话</item>
+        <item>凯瑟琳—女青、英</item>
+        <item>亨利—男青、英</item>
+        <item>玛丽—女青、英</item>
+        <item>小研—女青、中英、普通话</item>
+        <item>小琪—女青、中英、普通话</item>
+        <item>小峰—男青、中英、普通话</item>
+        <item>小梅—女青、中英、粤语</item>
+        <item>小莉—女青、中英、台湾普通话</item>
+        <item>小蓉—女青、中、四川话</item>
+        <item>小芸—女青、中、东北话</item>
+        <item>小坤—男青、中、河南话</item>
+        <item>小强—男青、中、湖南话</item>
+        <item>小莹—女青、中、陕西话</item>
+        <item>小新—男童、中、普通话</item>
+        <item>楠楠—女童、中、普通话</item>
+        <item>老孙—男老、中、普通话</item>
+    </string-array>
+    <string-array name="voicer_values">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>catherine</item>
+        <item>henry</item>
+        <item>vimary</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+    <string-array name="stream_entries">
+        <item>通话</item>
+        <item>系统</item>
+        <item>铃声</item>
+        <item>音乐</item>
+        <item>闹铃</item>
+        <item>通知</item>
+    </string-array>
+    <string-array name="stream_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

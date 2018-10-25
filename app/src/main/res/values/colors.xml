@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="home_custom_button_bg_color">#11ffffff</color>
+    <color name="home_inside_divider_color">#74ffffff</color>
+    <color name="home_item_divider_color">#55ffffff</color>
+    <color name="home_text_color">@color/white</color>
+    <color name="home_text_color_dark">@color/white</color>
+
+    <!-- sky color -->
+    <color name="clear_sky_day_start">#ff1f99d6</color>
+    <color name="clear_sky_night_start">#ff0b0933</color>
+    <color name="cloudy_sky_day_start">#ff1f99d6</color>
+    <color name="cloudy_sky_night_start">#ff0b0933</color>
+    <color name="rain_sky_day_start">#ff4f687b</color>
+    <color name="rain_sky_night_start">#ff0b1c29</color>
+    <color name="haze_sky_day_start">#ff6e6956</color>
+    <color name="haze_sky_night_start">#ff292822</color>
+    <color name="overcast_sky_day_start">#ff313638</color>
+    <color name="overcast_sky_night_start">#ff201f25</color>
+    <color name="fog_sky_day_start">#ff1880a6</color>
+    <color name="fog_sky_night_start">#ff0b0933</color>
+    <color name="deepBlue">#247299</color>
+
+    <!--进度条-->
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="bgColor_overlay_black">#95000000</color>
+    <!--窗口背景颜色-->
+    <color name="bgColor_svprogressdefaultview">@android:color/white</color>
+    <!--标题颜色-->
+    <color name="textColor_svprogresshuddefault_msg">#000000</color>
+    <color name="roundColor_svprogresshuddefault">#e5e5e5</color>
+    <color name="roundProgressColor_svprogresshuddefault">@android:color/black</color>
+</resources>

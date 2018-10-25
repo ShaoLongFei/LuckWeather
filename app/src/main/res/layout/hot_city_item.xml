@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/tv_hotcity"
+    android:layout_width="100dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/bg_hot_city_item"
+    android:text="文字"
+    android:gravity="center"
+    android:textColor="@color/clear_sky_day_start"
+    android:textSize="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

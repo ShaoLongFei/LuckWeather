@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/title_bar"/>
+
+    <!--completionThreshold:它的值决定了你在AutoCompleteTextView至少输入几个字符，它才会具有自动提示的功能-->
+    <!--dropDownWidth设置提示框的宽度-->
+    <!--completionHintView这是框框底部显示的文字,也可以用completionHint-->
+    <!--dropDownSelector 提示框中点击时的背景颜色-->
+    <!--dropDownVerticalOffset 距搜索框的垂直距离-->
+    <!--popupBackground 设置下方提示框背景 @null表示透明-->
+    <!--android:background="@null" 用去去掉AutoCompleteTextView本身自带的下划线-->
+    <AutoCompleteTextView
+        android:id="@+id/auto_seekTips"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_autocompletetext"
+        android:completionThreshold="1"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="5dp"
+        android:dropDownWidth="match_parent"
+        android:dropDownVerticalOffset="5dp"
+        android:hint="请输入城市名称"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLength="20"
+        android:paddingLeft="15dp"
+        android:popupBackground="@color/white"
+        android:textSize="20sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/tv_hotCitytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="热门城市"
+        android:textColor="@color/clear_sky_day_start"
+        android:textSize="18sp" />
+
+    <!--numColumns 每一行显示多少列-->
+    <!--horizontalSpacing 两列之间的距离-->
+    <!--verticalSpacing 两行之间的距离-->
+    <!-- android:listSelector="@android:color/transparent" 去掉点击item时的阴影-->
+    <GridView
+        android:id="@+id/gd_hotcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:verticalSpacing="18dp"
+        android:gravity="center">
+
+    </GridView>
+
+
+</LinearLayout>

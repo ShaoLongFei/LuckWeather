@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <com.example.liuyue.luckweather.widget.WindmillView
+            android:id="@+id/windViewBig"
+            android:layout_width="150dp"
+            android:layout_height="100dp" />
+
+        <com.example.liuyue.luckweather.widget.WindmillView
+            android:id="@+id/windViewSmall"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <!--风-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/ic_text_wind"
+                    android:id="@+id/iv_wind"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_wind"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_home_str_wind"
+                    android:textColor="@color/home_text_color_dark"
+                    android:textSize="13.0sp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:background="@color/home_inside_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv_wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="东南风2级2.6米/秒"
+                    android:textColor="@color/home_text_color"
+                    android:textSize="13.0sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@color/home_inside_divider_color" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!--相对湿度-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/ic_text_hum"
+                    android:id="@+id/iv_humidity"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_humidity"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_home_str_humidity"
+                    android:textColor="@color/home_text_color_dark"
+                    android:textSize="13.0sp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:background="@color/home_inside_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="41%"
+                    android:textColor="@color/home_text_color"
+                    android:textSize="13.0sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@color/home_inside_divider_color" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!--能见度-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/ic_text_vis"
+                    android:id="@+id/iv_visibility"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_visibility"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_home_str_visibility"
+                    android:textColor="@color/home_text_color_dark"
+                    android:textSize="13.0sp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:background="@color/home_inside_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv_visibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="16.1千米"
+                    android:textColor="@color/home_text_color"
+                    android:textSize="13.0sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@color/home_inside_divider_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--气压-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/ic_text_pres"
+                    android:id="@+id/iv_pressure"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_pressure"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_home_str_pressure"
+                    android:textColor="@color/home_text_color_dark"
+                    android:textSize="13.0sp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:background="@color/home_inside_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv_pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="1020.7毫巴"
+                    android:textColor="@color/home_text_color"
+                    android:textSize="13.0sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@color/home_inside_divider_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--云量-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/ic_text_cloud"
+                    android:id="@+id/iv_cloud"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_cloud"
+                    android:text="@string/activity_home_str_cloudiness"
+                    android:textColor="@color/home_text_color_dark"
+                    android:textSize="13.0sp"
+                    android:layout_centerVertical="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:background="@color/home_inside_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv_cloudiness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textColor="@color/home_text_color"
+                    android:textSize="13.0sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@color/home_inside_divider_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
