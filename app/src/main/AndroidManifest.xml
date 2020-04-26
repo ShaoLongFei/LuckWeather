@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.liuyue.luckweather">
+    package="com.liuyue.luckweather">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.MainActivity">
+        <activity android:name="com.liuyue.luckweather.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,12 +18,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.WebViewActivity"/>
-        <activity android:name=".ui.SetActivity"/>
-        <activity android:name=".ui.AlarmActivity"/>
-        <activity android:name=".ui.CareActivity"/>
-        <activity android:name=".ui.SpeechSetActivity"/>
-        <activity android:name=".ui.CitySelectActivity"/>
+        <activity android:name="com.liuyue.luckweather.ui.WebViewActivity"/>
+        <activity android:name="com.liuyue.luckweather.ui.SetActivity"/>
+        <activity android:name="com.liuyue.luckweather.ui.AlarmActivity"/>
+        <activity android:name="com.liuyue.luckweather.ui.CareActivity"/>
+        <activity android:name="com.liuyue.luckweather.ui.SpeechSetActivity"/>
+        <activity android:name="com.liuyue.luckweather.ui.CitySelectActivity"/>
 
         <!--百度地图-->
         <meta-data
@@ -34,9 +34,9 @@
             android:name="com.amap.api.v2.apikey"
             android:value="5b6782f8e60ba51677eb75c68dec5442"/>
 
-        <service android:name=".service.WdigetUpdateService" />
+        <service android:name="com.liuyue.luckweather.service.WdigetUpdateService" />
 
-        <receiver android:name=".widget.WeatherWdigetProvider" >
+        <receiver android:name="com.liuyue.luckweather.widget.WeatherWdigetProvider" >
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/app" />

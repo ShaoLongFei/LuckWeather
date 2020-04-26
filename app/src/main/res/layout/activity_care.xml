@@ -23,7 +23,7 @@
 
 
 
-    <com.example.liuyue.luckweather.widget.AnimatedExpandableListView
+    <com.liuyue.luckweather.widget.AnimatedExpandableListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/care_list"/>

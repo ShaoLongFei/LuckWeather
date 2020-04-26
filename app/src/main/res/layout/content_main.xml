@@ -112,7 +112,7 @@
 
                     </RelativeLayout>
 
-                    <com.example.liuyue.luckweather.widget.IndexHorizontalScrollView
+                    <com.liuyue.luckweather.widget.IndexHorizontalScrollView
                         android:id="@+id/indexHorizontalScrollView"
                         android:background="#00000000"
                         android:fadeScrollbars="false"
@@ -120,12 +120,12 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true">
 
-                        <com.example.liuyue.luckweather.widget.Today24HourView
+                        <com.liuyue.luckweather.widget.Today24HourView
                             android:id="@+id/today24HourView"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent" />
 
-                    </com.example.liuyue.luckweather.widget.IndexHorizontalScrollView>
+                    </com.liuyue.luckweather.widget.IndexHorizontalScrollView>
 
                     <ImageView
                         android:layout_width="50dip"
@@ -179,7 +179,7 @@
                     android:textColor="@color/home_text_color_dark"
                     android:textSize="13.0sp" />
 
-                <com.example.liuyue.luckweather.widget.WeekForcastView.ZzWeatherView
+                <com.liuyue.luckweather.widget.WeekForcastView.ZzWeatherView
                     android:id="@+id/weather_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

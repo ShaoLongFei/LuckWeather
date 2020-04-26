@@ -28,7 +28,7 @@
             android:id="@+id/zhishu_set_name"
             />
 
-        <com.example.liuyue.luckweather.widget.FunSwitch
+        <com.liuyue.luckweather.widget.FunSwitch
             android:id="@+id/zhishu_set_switchButton"
             android:layout_width="50dp"
             android:layout_height="wrap_content"

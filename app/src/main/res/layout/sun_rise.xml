@@ -13,7 +13,7 @@
         android:textColor="@color/home_text_color_dark"
         android:textSize="14.0sp" />
 
-    <com.example.liuyue.luckweather.widget.SunRiseView
+    <com.liuyue.luckweather.widget.SunRiseView
         android:id="@+id/view_sun"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
