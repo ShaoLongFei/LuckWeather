@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.liuyue.luckweather.ui.MainActivity">
+        <activity android:name="com.liuyue.luckweather.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,12 +18,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.liuyue.luckweather.ui.WebViewActivity"/>
-        <activity android:name="com.liuyue.luckweather.ui.SetActivity"/>
-        <activity android:name="com.liuyue.luckweather.ui.AlarmActivity"/>
-        <activity android:name="com.liuyue.luckweather.ui.CareActivity"/>
-        <activity android:name="com.liuyue.luckweather.ui.SpeechSetActivity"/>
-        <activity android:name="com.liuyue.luckweather.ui.CitySelectActivity"/>
+        <activity android:name="com.liuyue.luckweather.activity.WebViewActivity"/>
+        <activity android:name="com.liuyue.luckweather.activity.SetActivity"/>
+        <activity android:name="com.liuyue.luckweather.activity.AlarmActivity"/>
+        <activity android:name="com.liuyue.luckweather.activity.CareActivity"/>
+        <activity android:name="com.liuyue.luckweather.activity.SpeechSetActivity"/>
+        <activity android:name="com.liuyue.luckweather.activity.CitySelectActivity"/>
 
         <!--百度地图-->
         <meta-data
@@ -33,6 +33,11 @@
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="5b6782f8e60ba51677eb75c68dec5442"/>
+        <!--Google 广告-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8057436685044682~5206097907"/>
+
 
         <service android:name="com.liuyue.luckweather.service.WdigetUpdateService" />
 

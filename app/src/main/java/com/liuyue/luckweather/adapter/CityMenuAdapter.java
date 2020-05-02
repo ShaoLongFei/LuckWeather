@@ -1,4 +1,4 @@
-package com.liuyue.luckweather.ui.adapter;
+package com.liuyue.luckweather.adapter;
 
 import android.app.Activity;
 import android.view.View;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.liuyue.luckweather.R;
 import com.liuyue.luckweather.bean.CityWheatherBean;
-import com.liuyue.luckweather.ui.CityMenuListener;
+import com.liuyue.luckweather.activity.CityMenuListener;
 
 import java.util.List;
 

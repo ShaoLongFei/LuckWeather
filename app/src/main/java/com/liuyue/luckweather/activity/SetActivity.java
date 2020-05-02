@@ -1,9 +1,9 @@
-package com.liuyue.luckweather.ui;
+package com.liuyue.luckweather.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.transition.Slide;
 import android.view.Gravity;
 import android.view.View;
@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.liuyue.luckweather.R;
 import com.liuyue.luckweather.bean.ZhiShuBean;
 import com.liuyue.luckweather.bean.ZhiShuSetBean;
-import com.liuyue.luckweather.ui.adapter.ZhiShuSetAdapter;
+import com.liuyue.luckweather.adapter.ZhiShuSetAdapter;
 import com.liuyue.luckweather.utils.Constant;
 import com.liuyue.luckweather.utils.SharePrefUtil;
 import com.liuyue.luckweather.utils.TitleBarUtil;

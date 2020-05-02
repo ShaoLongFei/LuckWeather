@@ -20,7 +20,7 @@ import android.widget.RemoteViews;
 import com.liuyue.luckweather.R;
 import com.liuyue.luckweather.bean.CityWheatherBean;
 import com.liuyue.luckweather.manager.CityManager;
-import com.liuyue.luckweather.ui.MainActivity;
+import com.liuyue.luckweather.activity.MainActivity;
 import com.liuyue.luckweather.widget.WeatherWdigetProvider;
 
 

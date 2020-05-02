@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.liuyue.luckweather.R;
-import com.liuyue.luckweather.ui.MainActivity;
+import com.liuyue.luckweather.activity.MainActivity;
 import com.iflytek.cloud.ErrorCode;
 import com.iflytek.cloud.InitListener;
 import com.iflytek.cloud.SpeechConstant;

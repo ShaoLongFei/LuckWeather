@@ -1,4 +1,4 @@
-package com.liuyue.luckweather.ui.adapter;
+package com.liuyue.luckweather.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

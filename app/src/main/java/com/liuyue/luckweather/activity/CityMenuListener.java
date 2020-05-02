@@ -1,4 +1,4 @@
-package com.liuyue.luckweather.ui;
+package com.liuyue.luckweather.activity;
 
 import android.view.View;
 

@@ -1,4 +1,4 @@
-package com.liuyue.luckweather.ui;
+package com.liuyue.luckweather.activity;
 
 import android.Manifest;
 import android.content.Context;
@@ -7,10 +7,10 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.transition.Slide;
 import android.view.Gravity;
 import android.view.LayoutInflater;

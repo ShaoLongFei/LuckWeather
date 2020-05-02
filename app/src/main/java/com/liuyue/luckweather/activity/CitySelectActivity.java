@@ -1,10 +1,10 @@
-package com.liuyue.luckweather.ui;
+package com.liuyue.luckweather.activity;
 
 
 import android.content.Intent;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -19,7 +19,7 @@ import android.widget.TextView;
 
 import com.liuyue.luckweather.R;
 import com.liuyue.luckweather.bean.CitySelectBean;
-import com.liuyue.luckweather.ui.adapter.AutoCompleteTextAdapter;
+import com.liuyue.luckweather.adapter.AutoCompleteTextAdapter;
 import com.liuyue.luckweather.utils.Constant;
 import com.liuyue.luckweather.utils.TitleBarUtil;
 
