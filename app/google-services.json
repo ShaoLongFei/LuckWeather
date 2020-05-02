@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "220086887251",
+    "firebase_url": "https://luckweather-2fc87.firebaseio.com",
+    "project_id": "luckweather-2fc87",
+    "storage_bucket": "luckweather-2fc87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220086887251:android:a3296bcf918a9d5eadf7a6",
+        "android_client_info": {
+          "package_name": "com.liuyue.luckweather"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220086887251-vgkbq03ndp55bu2682kmkeuvvmjqi3hf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.liuyue.luckweather",
+            "certificate_hash": "0dbfa7fc54cfd585d02c4bbe2acd8c1d98a0b8b1"
+          }
+        },
+        {
+          "client_id": "220086887251-r904pe49dgfcrca7u49pdc3dr4uhui7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8IPpz9Vs1tF9w2b1OjBtbEdlLQZd3RqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220086887251-r904pe49dgfcrca7u49pdc3dr4uhui7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
